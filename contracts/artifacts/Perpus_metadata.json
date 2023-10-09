@@ -1,0 +1,281 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "BookCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "BookDeleted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "BookUpdate",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					}
+				],
+				"name": "getBuku",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "__isbn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "__title",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "__yearBookCreated",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "__writerName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "__writerAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					}
+				],
+				"name": "hapusBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listofBooks",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "yearBookCreated",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "writerName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "writerAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_yearBookCreated",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_writerName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_writerAddress",
+						"type": "address"
+					}
+				],
+				"name": "tambahBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					}
+				],
+				"name": "updateTitleBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Perpus.sol": "Perpus"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Perpus.sol": {
+			"keccak256": "0x0e2ea10dbb2aee10acbfb0fc062489c989e554ebb1cf98883edb88a1b28d84ec",
+			"license": "UNLICENSE",
+			"urls": [
+				"bzz-raw://4976fae471829c8b5efe4e12685ac52593078385acd043f1afa8434a9b03439a",
+				"dweb:/ipfs/QmQBXEN3qBiJxSX8sdsFAqe7HTAwjQschryreiCMHZE6qA"
+			]
+		}
+	},
+	"version": 1
+}
